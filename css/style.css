@@ -1,1 +1,188 @@
-/* No CSS */
+/* Color Variables */
+
+:root {
+--color-primary:#2289ff;
+--color-secondary:#193f6a !important;
+--color-acent:#193f6a;
+--font-poppins: "Poppins", serif;
+}
+
+/* Custom Classes */
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.bg-acent {
+    background-color: var(--color-acent);
+}
+
+.color-acent {
+    color: var(--color-acent);
+}
+
+.btn-theme {
+    box-shadow: none;
+    margin: 0px;
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 30px 0px 30px 30px;
+    transition: 0.5s ease;
+}
+
+.btn-theme:hover {
+    background-color: var(--color-acent);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.btn-theme-2 {
+    box-shadow: 0px 10px 20px 0px rgb(34 137 255/52%);
+    margin: 0px;
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+
+.btn-theme-2:hover {
+    background-color: var(--color-acent);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.btn-play {
+    box-shadow: none;
+    margin: 0px;
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: var(--color-secondary);
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 100%;
+    transition: 0.5s ease;
+}
+
+.btn-play:hover {
+    background-color: var(--color-acent);
+    color: var(--color-primary);
+    box-shadow: none;
+}
+
+/* ! Header */
+
+header.header {
+    width: 100%;
+}
+
+.header nav {
+    box-shadow: none;
+}
+
+.navbar-brand {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-item {
+    margin: auto 5px;
+}
+
+.nav-link {
+    font-family: var(--font-poppins);
+    color: var(--color-secondary);
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: 0.5s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-primary);
+}
+
+/* ! Banner */
+
+.banner {
+    width: 100%;
+    padding: 80px 0px;
+    color: var(--color-secondary);
+    font-family: var(--font-poppins);
+}
+
+.banner p {
+    font-weight: 400;
+}
+
+.image {
+    border-radius: 80px 80px 0px 80px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 370px;
+    height: 370px;
+}
+
+/* ! Search */
+
+.search-area {
+    border-radius: 80px;
+    padding: 15px 50px;
+    font-family: var(--font-poppins);
+}
+
+.search-area select {
+    padding: 5px;
+    border: none;
+    outline: none;
+    width: 80%;
+    margin-bottom: 3px;
+}
+
+.search-area input {
+    border: 1px solid #ffffff;
+    outline: none;
+}
+
+.search-area input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--color-secondary);
+}
+
+.search-area button.btn-theme {
+    border-radius: 30px;
+    padding: 12px 40px;
+}
