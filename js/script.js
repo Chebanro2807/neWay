@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.tour-section .swiper-container', {
     loop: true,
     slidesPerView:4,
     spaceBetween: 30,
