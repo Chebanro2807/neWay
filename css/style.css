@@ -196,6 +196,10 @@ header.header {
     font-family: var(--font-poppins);
 }
 
+.about-section h1 {
+    color: var(--color-secondary);
+}
+
 .about-section .image {
     border-radius: 80px 0px 80px 80px;
     overflow: hidden;
@@ -237,4 +241,60 @@ header.header {
 .service-show p {
 font-size: 13px;
 font-weight: 400;
+}
+
+/* ! Services */
+
+.tour-section {
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #eeeeee;
+    font-family: var(--font-poppins);
+    color: var(--color-secondary);
+}
+
+.text-right a{
+    color: var(--color-secondary);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 1s ease;
+}
+
+.text-right a:hover{
+    color: var(--color-primary);
+}
+
+.slider-tours {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide .image img{
+    width: 100%;
+    height: 200px;
+}
+
+.property-list p {
+    font-weight: 500;
+}
+
+.property-list .image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 0px 30px 0px 30px;
+    margin-bottom: 10px;
+}
+
+.property-list {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 0px 30px 0px 30px;
+    color: #000000;
 }

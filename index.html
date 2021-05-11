@@ -17,7 +17,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <!--! Swipper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <!--! Custom Css  -->
+    <!--! Custom CSS  -->
     <link rel="shortcut icon" href="/img/mainicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <!--! JQuery -->
@@ -30,6 +30,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <!--!Swipper JS  -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- ! Custom JS  -->
+    <script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body>
     <!-- Header ----------------------------------------->
@@ -74,7 +76,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5 my-auto mr-auto">
-                    <div class="h1 h1-responsive"> Find Your Next Perfect Place To Live.</div>
+                    <div class="h1 h1-responsive"> Find Your Next Perfect Tour To Rest.</div>
                     <p>In exprcting display, thought. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, ea autem! Animi magnam sunt dolore laboriosam error dolores reiciendis officia, nemo mollitia accusamus repellat vero adipisci est tenetur recusandae rerum.</p>
                     <button class="btn btn-theme-2">Help Me</button>
                     <button class="btn btn-play ml-3">
@@ -105,19 +107,19 @@
                     </div>
                     <div class="col-md-3">
                         <select>
-                            <option>Property Type</option>
-                            <option>Type 1</option>
-                            <option>Type 2</option>
+                            <option>Date</option>
+                            <option>1</option>
+                            <option>2</option>
                         </select>
-                        <input type="text" class="form-control" placeholder="Property Type">
+                        <input type="text" class="form-control" placeholder="Date">
                     </div>
                     <div class="col-md-3">
                         <select>
-                            <option>Max Price</option>
-                            <option>Min Price</option>
-                            <option>Avarage</option>
+                            <option>1 tourist</option>
+                            <option>2 tourist</option>
+                            <option>3 tourist</option>
                         </select>
-                        <input type="text" class="form-control" placeholder="$6,500">
+                        <input type="text" class="form-control" placeholder="Tourists">
                     </div>
                     <div class="col-md-2 ml-auto my-auto">
                         <button class="btn btn-theme">Search</button>
@@ -129,7 +131,7 @@
 
     <!-- About Us ----------------------------------------->
 
-    <section class="about-section my5">
+    <section class="about-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 ">
@@ -139,7 +141,7 @@
                 </div>
                 <div class="col-md-5 pl-5">
                     <h6 class="h6 color-primary m-0">About Us</h6>
-                    <h1 class="h1 h1-responsive mb-4">We Provide The Best Property For You!</h1>
+                    <h1 class="h1 h1-responsive mb-4">We Provide The Best Rest For You!</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, commodi quaerat voluptatibus molestiae praesentium fugit, maxime nulla animi.
                     </p>
@@ -164,22 +166,298 @@
         <div class="container">
             <div class="d-flex jystify-content-between">
                 <div class="shadow service-show">
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-map-signs"></i>
                     <h4 class="h5">Make Your Dream True</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="shadow service-show">
-                    <i class="fas fa-desktop"></i>
-                    <h4 class="h5">Start Your Memdership</h4>
+                    <i class="fas fa-book-reader"></i>
+                    <h4 class="h5">Choose Your Tour</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="shadow service-show">
-                    <i class="fas fa-home"></i>
-                    <h4 class="h5">Enjoy Your New Home</h4>
+                    <i class="fas fa-route"></i>
+                    <h4 class="h5">Enjoy Your Travelling</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Tours ----------------------------------------->
+
+    <section class="tour-section">
+        <div class="container">
+            <h6 class="h6 color-primary m-0">Tours</h6>
+            <h1 class="h1 h1-responsive mb-4">Hot Tours</h1>
+            <div class="text-right">
+                <a href="#">
+                    Find More Tours
+                    <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                </a>
+            </div>
+            <!-- ! Tours Slider -->
+            <div class="slider-tours">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="property-list shadow">
+                                <div class="image">
+                                    <img src="img/aboutUs.jpg">
+                                </div>
+                                <div class="text-right">
+                                    <h4 class="h5">$100</h4>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="item">
+                                        <h4 class="h5 m-0">Palace</h4>
+                                        <p class="m-0">City, country</p>
+                                    </div>
+                                    <div class="item d-flex align-self-center">
+                                        <i class="fas fa-bed mr-2 align-self-center"></i>
+                                        <span class="mr-3">5</span>
+                                        <i class="fas fa-bath mr-2 align-self-center"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="property-list shadow">
+                                <div class="image">
+                                    <img src="img/aboutUs.jpg">
+                                </div>
+                                <div class="text-right">
+                                    <h4 class="h5">$100</h4>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="item">
+                                        <h4 class="h5 m-0">Palace</h4>
+                                        <p class="m-0">City, country</p>
+                                    </div>
+                                    <div class="item d-flex align-self-center">
+                                        <i class="fas fa-bed mr-2 align-self-center"></i>
+                                        <span class="mr-3">5</span>
+                                        <i class="fas fa-bath mr-2 align-self-center"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="property-list shadow">
+                                <div class="image">
+                                    <img src="img/aboutUs.jpg">
+                                </div>
+                                <div class="text-right">
+                                    <h4 class="h5">$100</h4>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="item">
+                                        <h4 class="h5 m-0">Palace</h4>
+                                        <p class="m-0">City, country</p>
+                                    </div>
+                                    <div class="item d-flex align-self-center">
+                                        <i class="fas fa-bed mr-2 align-self-center"></i>
+                                        <span class="mr-3">5</span>
+                                        <i class="fas fa-bath mr-2 align-self-center"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="property-list shadow">
+                                <div class="image">
+                                    <img src="img/aboutUs.jpg">
+                                </div>
+                                <div class="text-right">
+                                    <h4 class="h5">$100</h4>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="item">
+                                        <h4 class="h5 m-0">Palace</h4>
+                                        <p class="m-0">City, country</p>
+                                    </div>
+                                    <div class="item d-flex align-self-center">
+                                        <i class="fas fa-bed mr-2 align-self-center"></i>
+                                        <span class="mr-3">5</span>
+                                        <i class="fas fa-bath mr-2 align-self-center"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="property-list shadow">
+                                <div class="image">
+                                    <img src="img/aboutUs.jpg">
+                                </div>
+                                <div class="text-right">
+                                    <h4 class="h5">$100</h4>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="item">
+                                        <h4 class="h5 m-0">Palace</h4>
+                                        <p class="m-0">City, country</p>
+                                    </div>
+                                    <div class="item d-flex align-self-center">
+                                        <i class="fas fa-bed mr-2 align-self-center"></i>
+                                        <span class="mr-3">5</span>
+                                        <i class="fas fa-bath mr-2 align-self-center"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="property-list shadow">
+                                <div class="image">
+                                    <img src="img/aboutUs.jpg">
+                                </div>
+                                <div class="text-right">
+                                    <h4 class="h5">$100</h4>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="item">
+                                        <h4 class="h5 m-0">Palace</h4>
+                                        <p class="m-0">City, country</p>
+                                    </div>
+                                    <div class="item d-flex align-self-center">
+                                        <i class="fas fa-bed mr-2 align-self-center"></i>
+                                        <span class="mr-3">5</span>
+                                        <i class="fas fa-bath mr-2 align-self-center"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="property-list shadow">
+                                <div class="image">
+                                    <img src="img/aboutUs.jpg">
+                                </div>
+                                <div class="text-right">
+                                    <h4 class="h5">$100</h4>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="item">
+                                        <h4 class="h5 m-0">Palace</h4>
+                                        <p class="m-0">City, country</p>
+                                    </div>
+                                    <div class="item d-flex align-self-center">
+                                        <i class="fas fa-bed mr-2 align-self-center"></i>
+                                        <span class="mr-3">5</span>
+                                        <i class="fas fa-bath mr-2 align-self-center"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="property-list shadow">
+                                <div class="image">
+                                    <img src="img/aboutUs.jpg">
+                                </div>
+                                <div class="text-right">
+                                    <h4 class="h5">$100</h4>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="item">
+                                        <h4 class="h5 m-0">Palace</h4>
+                                        <p class="m-0">City, country</p>
+                                    </div>
+                                    <div class="item d-flex align-self-center">
+                                        <i class="fas fa-bed mr-2 align-self-center"></i>
+                                        <span class="mr-3">5</span>
+                                        <i class="fas fa-bath mr-2 align-self-center"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="property-list shadow">
+                                <div class="image">
+                                    <img src="img/aboutUs.jpg">
+                                </div>
+                                <div class="text-right">
+                                    <h4 class="h5">$100</h4>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="item">
+                                        <h4 class="h5 m-0">Palace</h4>
+                                        <p class="m-0">City, country</p>
+                                    </div>
+                                    <div class="item d-flex align-self-center">
+                                        <i class="fas fa-bed mr-2 align-self-center"></i>
+                                        <span class="mr-3">5</span>
+                                        <i class="fas fa-bath mr-2 align-self-center"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="property-list shadow">
+                                <div class="image">
+                                    <img src="img/aboutUs.jpg">
+                                </div>
+                                <div class="text-right">
+                                    <h4 class="h5">$100</h4>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="item">
+                                        <h4 class="h5 m-0">Palace</h4>
+                                        <p class="m-0">City, country</p>
+                                    </div>
+                                    <div class="item d-flex align-self-center">
+                                        <i class="fas fa-bed mr-2 align-self-center"></i>
+                                        <span class="mr-3">5</span>
+                                        <i class="fas fa-bath mr-2 align-self-center"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="property-list shadow">
+                                <div class="image">
+                                    <img src="img/aboutUs.jpg">
+                                </div>
+                                <div class="text-right">
+                                    <h4 class="h5">$100</h4>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="item">
+                                        <h4 class="h5 m-0">Palace</h4>
+                                        <p class="m-0">City, country</p>
+                                    </div>
+                                    <div class="item d-flex align-self-center">
+                                        <i class="fas fa-bed mr-2 align-self-center"></i>
+                                        <span class="mr-3">5</span>
+                                        <i class="fas fa-bath mr-2 align-self-center"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
