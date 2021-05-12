@@ -33,6 +33,13 @@
     color: var(--color-acent);
 }
 
+button, 
+button:active, 
+button:focus {
+    outline: none !important;
+}
+
+
 .btn-theme {
     box-shadow: none;
     margin: 0px;
@@ -132,6 +139,44 @@ header.header {
     color: var(--color-primary);
 }
 
+.dropdown {
+    position: relative;
+}
+
+.call-back {
+    position: absolute;
+    top: 40px;
+    right: -18px;
+    width: 135px;
+    padding: 12px;
+    background-color: var(--color-acent);
+    display: none;
+    transition: 1s ease;
+    border-radius: 10px;
+
+}
+
+.active {
+    display: block;
+}
+
+.call-back input {
+    width: 100%;
+    border-radius: 30px;
+    outline: none;
+    border: var(--color-primary);
+    font-family: var(--font-poppins);
+}
+
+.call-back .btn-theme{
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 10px;
+    font-family: var(--font-poppins);
+}
+
 /* ! Banner */
 
 .banner {
@@ -163,6 +208,16 @@ header.header {
     font-family: var(--font-poppins);
 }
 
+.select {
+    padding: 5px 5px 5px 10px;
+    border: none;
+    outline: none;
+    width: 80%;
+    margin-bottom: 3px;
+    font-weight: 500;
+    cursor: default;
+}
+
 .search-area select {
     padding: 5px;
     border: none;
@@ -174,6 +229,7 @@ header.header {
 .search-area input {
     border: 1px solid #ffffff;
     outline: none;
+    cursor: pointer;
 }
 
 .search-area input:focus {
@@ -185,6 +241,14 @@ header.header {
 .search-area button.btn-theme {
     border-radius: 30px;
     padding: 12px 40px;
+}
+
+.people {
+    padding: 3px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 5px;
+    font-family: var(--font-poppins);
+    cursor: pointer;
 }
 
 /* ! About Us */
@@ -243,7 +307,7 @@ font-size: 13px;
 font-weight: 400;
 }
 
-/* ! Services */
+/* ! Tour */
 
 .tour-section {
     width: 100%;
@@ -337,6 +401,10 @@ font-weight: 400;
     font-family: var(--font-poppins);
 }
 
+.popular-tour-section .text-left {
+    float: none;
+}
+
 .popular-tour-section .btn-theme {
     border-radius: 30px;
 }
@@ -379,6 +447,7 @@ font-weight: 400;
 .mail-section .form {
     padding: 10px 20px;
     border-radius: 30px;
+    float: none;
 }
 
 .mail-section .form input {

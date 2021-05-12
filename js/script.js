@@ -8,3 +8,9 @@ const swiper = new Swiper('.tour-section .swiper-container', {
 const swiper2 = new Swiper('.testimonials-section .swiper-container', {
     loop: true,
 });
+
+$('.datepicker').datepicker({
+    weekStart:1,
+    color: 'blue'
+});
+

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neWay</title>
+    <!--! For Dates CSS -->
+    <link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/bootstrap3/bootstrap.min.css" />
     <!--! Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!--! Google Fonts -->
@@ -19,6 +21,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!--! Custom CSS  -->
     <link rel="shortcut icon" href="/img/mainicon.png" type="image/png">
+    <link rel="stylesheet" href="css/calendar-style.css">
     <link rel="stylesheet" href="css/style.css">
     <!--! JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -32,9 +35,15 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- ! Custom JS  -->
     <script type="text/javascript" src="js/script.js" defer></script>
+    <script type="text/javascript" src="js/dropdown.js" defer></script>
+    <!-- ! For Dates JS -->
+    <script src="https://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://bootstraptema.ru/plugins/2015/b-v3-3-6/bootstrap.min.js"></script>
+    <script src="https://bootstraptema.ru/_sf/3/393.js"></script>
 </head>
 <body>
     <!-- Header ----------------------------------------->
+
     <header class="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
@@ -63,7 +72,14 @@
                             <a class="nav-link" href="#">Contacts</a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-theme">Help Me</button>
+                            <div class="dropdown">
+                                <button id="btn-help" class="btn btn-theme" type="button">Help Me</button>
+                                </button>
+                                <div class="call-back">
+                                    <input type="text" placeholder="+38099-99-99-999">
+                                    <button class="btn btn-theme">Request Call Back</button>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -72,6 +88,7 @@
     </header>
 
     <!-- Banner ----------------------------------------->
+
     <section class="banner">
         <div class="container">
             <div class="row">
@@ -93,33 +110,36 @@
     </section>
 
     <!-- Search ----------------------------------------->
+
     <section class="search-section my-5">
         <div class="container">
-            <div class="col-md-11 mx-auto search-area shadow">
+            <div class="col-md-12 mx-auto search-area shadow">
                 <div class="row">
                     <div class="col-md-3">
-                        <select>
-                            <option>Locaition</option>
-                            <option>Locaition</option>
-                            <option>Locaition</option>
-                        </select>
-                        <input type="text" class="form-control" placeholder="Locaition">
+                        <div class="select">
+                            Locaition
+                        </div>
+                        <input type="text" class="form-control" placeholder="Country, City">
                     </div>
-                    <div class="col-md-3">
-                        <select>
-                            <option>Date</option>
-                            <option>1</option>
-                            <option>2</option>
-                        </select>
-                        <input type="text" class="form-control" placeholder="Date">
+                    <div class="col-md-2">
+                        <div class="select">
+                            Day In
+                        </div>
+                        <input type="text" class="form-control datepicker" placeholder="04/01/2021">
                     </div>
-                    <div class="col-md-3">
-                        <select>
-                            <option>1 tourist</option>
-                            <option>2 tourist</option>
-                            <option>3 tourist</option>
-                        </select>
-                        <input type="text" class="form-control" placeholder="Tourists">
+                    <div class="col-md-2">
+                        <div class="select">
+                            Day Out
+                        </div>
+                        <input type="text" class="form-control datepicker" placeholder="04/01/2021">
+                    </div>
+                    <div class="col-md-3 click-js">
+                        <div class="select">
+                            Tourists
+                        </div>
+                        <div class="people">
+                            0 adult 0 children 0 appartament
+                        </div>
                     </div>
                     <div class="col-md-2 ml-auto my-auto">
                         <button class="btn btn-theme">Search</button>
@@ -706,7 +726,7 @@
         </div>
     </section>
 
-    <!-- Mail ----------------------------------------->
+    <!-- Footer ----------------------------------------->
     
     <footer class="footer">
         <div class="container">
