@@ -1,8 +1,10 @@
 class Nav {
     constructor() {
-        this.button = document.getElementById('btn-help');
+        this.buttons = document.querySelectorAll('.btn-help');
         this.dropdown = document.querySelector('.call-back')
-        this.button.addEventListener('click', this.toggleItem.bind(this));
+        this.buttons.forEach (btn => {
+            btn.addEventListener('click', this.toggleItem.bind(this));
+        })
     }
 
     toggleItem() {
