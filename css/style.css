@@ -155,7 +155,7 @@ header.header {
 
 .call-back {
     position: absolute;
-    top: 40px;
+    top: 50px;
     right: 0px;
     width: 210px;
     padding: 20px;
@@ -335,6 +335,16 @@ font-weight: 400;
     color: var(--color-secondary);
 }
 
+.tour-section .text-left {
+    display: flex;
+}
+
+.tour-section .text-left img {
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+}
+
 .text-right a{
     color: var(--color-secondary);
     font-size: 16px;
@@ -510,4 +520,35 @@ font-weight: 400;
 .footer a:hover{
     color: #ffffff;
     opacity: 0.7;
+}
+
+/* ! Modal */
+
+.modal {
+    width: 100%;
+    padding-right: 0;
+    background-color: rgba(2, 2, 2, 0.4);
+}
+
+.modal-dialog {
+    left: 50% !important;
+    top: 40% !important;
+    transform: translate(-40%, -50%) !important;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+}
+
+.modal-content {
+    border-radius: 0;
+    border: none;
+    width: 300px;
+    height: 400px;
+}
+
+.modal-body {
+    background-color: #0f8845;
+    color: #fff;
+    width: 300px;
+    height: 400px;
 }
