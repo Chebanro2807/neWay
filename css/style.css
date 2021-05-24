@@ -135,6 +135,10 @@ header.header {
     margin: auto 5px;
 }
 
+.navbar-collapse {
+    overflow: hidden;
+}
+
 .nav-link {
     font-family: var(--font-poppins);
     color: var(--color-secondary);
