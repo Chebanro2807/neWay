@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neWay</title>
-    <!--! For Dates CSS -->
-    <link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/bootstrap3/bootstrap.min.css" />
     <!--! Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!--! Google Fonts -->
@@ -37,9 +35,6 @@
     <script type="text/javascript" src="js/script.js" defer></script>
     <script type="text/javascript" src="js/dropdown.js" defer></script>
     <!-- ! For Dates JS -->
-    <script src="https://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="https://bootstraptema.ru/plugins/2015/b-v3-3-6/bootstrap.min.js"></script>
-    <script src="https://bootstraptema.ru/_sf/3/393.js"></script>
 </head>
 <body>
 
@@ -52,8 +47,27 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <div class="order">
-                                <input type="text" placeholder="+38099-99-99-999">
-                                <button class="btn btn-theme">Call Back</button>
+                                <h1 class="h2 text-center">We Will Select a Tour for You</h1>
+                                <div class="row mx-auto">
+                                    <div class="col-md-3 order-text">Name</div>
+                                    <div class="col-md-9"><input type="text"></div>
+                                </div>
+                                <div class="row mx-auto">
+                                    <div class="col-md-3 order-text">Phone</div>
+                                    <div class="col-md-9"><input type="text"></div>
+                                </div>
+                                <div class="row mx-auto">
+                                    <div class="col-md-3 order-text">E-mail</div>
+                                    <div class="col-md-9"><input type="text"></div>
+                                </div>
+                                <div class="row mx-auto">
+                                    <input type="checkbox" class="col-md-3">
+                                    <h3 class="order-text col-md-9">Yes, I'd like to receive news, special offers, and other information about new tours.</h3>
+                                </div>
+                                <div class="wrap">
+                                    <button class="btn btn-theme-2 col-md-6" data-toggle="modal" data-target=".bs-example-modal-lg">Order Tour</button>
+                                    <button class="btn btn-theme-2 col-md-4 right" data-toggle="modal" data-target=".bs-example-modal-lg">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -97,7 +111,6 @@
                                 <button id="btn-help" class="btn btn-theme btn-help" type="button">Help Me</button>
                                 </button>
                                 <div class="call-back">
-                                    <!--? Заменить на картинку? <span class="label"> </span> -->
                                     <input type="text" placeholder="+38099-99-99-999">
                                     <button class="btn btn-theme btn-help">Call Back</button>
                                 </div>
@@ -143,25 +156,17 @@
                         </div>
                         <input type="text" class="form-control" placeholder="Country, City">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="select">
                             Day In
                         </div>
                         <input type="text" class="form-control datepicker" placeholder="04/01/2021">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="select">
                             Day Out
                         </div>
                         <input type="text" class="form-control datepicker" placeholder="04/01/2021">
-                    </div>
-                    <div class="col-md-3 click-js">
-                        <div class="select">
-                            Tourists
-                        </div>
-                        <div class="people">
-                            0 adult 0 children 0 appartament
-                        </div>
                     </div>
                     <div class="col-md-2 ml-auto my-auto">
                         <button class="btn btn-theme">Search</button>
@@ -801,23 +806,25 @@
                     <h4 class="h3"><img src="" data="img/logo_footer.svg"></h4>
                 </div>
                 <div class="col-md-4 mx-auto">
-                    <div class="col-md-6">
-                        <h6 class="m-0 h6">Navigation</h6>
-                        <hr color="#ffffff">
-                        <ul>
-                            <li><a href="#header">Home</a></li>
-                            <li><a href="#about-us">About Us</a></li>
-                            <li><a href="#tours">Hot Tour</a></li>
-                            <li><a href="#popular-tours">Popular Tour</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <h6 class="m-0 h6">Contacts</h6>
-                        <hr color="#ffffff">
-                        <ul>
-                            <li><a href="tel:+380999999999">+38099-99-99-999</a></li>
-                            <li><a href="mailto:newway@gmail.com">newway@gmail.com</a></li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="m-0 h6">Navigation</h6>
+                            <hr color="#ffffff">
+                            <ul>
+                                <li><a href="#header">Home</a></li>
+                                <li><a href="#about-us">About Us</a></li>
+                                <li><a href="#tours">Hot Tour</a></li>
+                                <li><a href="#popular-tours">Popular Tour</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="m-0 h6">Contacts</h6>
+                            <hr color="#ffffff">
+                            <ul>
+                                <li><a href="tel:+380999999999">+38099-99-99-999</a></li>
+                                <li><a href="mailto:newway@gmail.com">newway@gmail.com</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
