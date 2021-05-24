@@ -27,4 +27,31 @@ class Nav {
     }
 }
 
+function handleImg(myImg, observerLazyLoading) {
+    myImg.forEach(myImgSingle => {
+        if (myImgSingle.intersectionRatio > 0) {
+            loadImage(myImgSingle.target);
+            observerLazyLoading.unobserve(myImgSingle.target)
+        }
+    });
+}
+
+function loadImage(image) {
+    image.src = image.getAttribute('data');
+    image.removeAttribute('data');
+}
+
+
+const optionsLazyLoading = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+}
+
+const observerLazyLoading = new IntersectionObserver(handleImg, optionsLazyLoading);
+const images = document.querySelectorAll('img[data]');
+images.forEach(img => {
+    observerLazyLoading.observe(img);
+})
+
 new Nav();
