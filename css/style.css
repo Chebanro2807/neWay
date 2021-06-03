@@ -226,6 +226,11 @@ header.header {
 
 /* ! Search */
 
+.search-section {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
 .search-area {
     border-radius: 80px;
     padding: 15px 50px;
@@ -403,9 +408,9 @@ font-weight: 400;
     color: #000000;
 }
 
-/* ! Work */
+/* ! benefits */
 
-.work-section {
+.benefits-section {
     width: 100%;
     padding: 100px 0px;
     background-color: #ffffff;
@@ -413,20 +418,20 @@ font-weight: 400;
     font-family: var(--font-poppins);
 }
 
-.work-section h1 {
+.benefits-section h1 {
     color: var(--color-secondary);
 }
 
-.work-section p {
+.benefits-section p {
     font-weight: 400;
 }
 
-.work-section .service-show {
+.benefits-section .service-show {
     cursor: pointer;
     transition: 1s ease;
 }
 
-.work-section .service-show:hover {
+.benefits-section .service-show:hover {
     background-color: #ffffff;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)!important;
 }

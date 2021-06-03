@@ -1,0 +1,34 @@
+@media only screen and (max-width: 580px) {
+    .search-section {
+        margin-top: 0px;
+    }
+    
+    .search-area {
+        border-radius: 0px;
+        padding: 30px;
+    }
+    
+    .search-area input {
+        border: 1px solid #ffffff;
+        outline: none;
+        margin-bottom: 10px;
+    }
+    
+    .search-area button.btn-theme {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .secvice-section .d-flex {
+        flex-direction: column;
+    }
+
+    .benefits-section .d-flex {
+        flex-direction: column;
+    }
+
+    .testimonial-list .image img {
+        border-radius: 100% 100% 100% 100%;
+        height: 110px;
+    }
+}
