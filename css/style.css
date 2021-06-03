@@ -269,7 +269,7 @@ header.header {
 }
 
 .form-control{
-    font-size: 1px;
+    font-size: 15px;
 }
 
 .people {
@@ -434,6 +434,7 @@ font-weight: 400;
 /* ! Popular Tour */
 
 .popular-tour-section {
+    padding-top: 20px;
     width: 100%;
     text-align: center;
     color: var(--color-secondary);
